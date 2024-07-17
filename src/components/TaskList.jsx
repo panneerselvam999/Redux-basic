@@ -13,13 +13,13 @@ const TaskList = () => {
 
 
     const updateTask = (task) => {
-        console.log("Update fun");
+        // console.log("Update fun");
         setIsModalOpen(true)
         dispatch(setSelectedTask(task))
     }
 
     const deleteTask = (task) => {
-        console.log("Delete fun");
+        // console.log("Delete fun");
         dispatch(removeTaskFromList(task))
     }
 

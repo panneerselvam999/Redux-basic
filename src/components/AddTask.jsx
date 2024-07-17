@@ -8,20 +8,20 @@ const AddTask = () => {
     const [des, setDes] = useState("");
 
     const dispatch = useDispatch();
-    const { tasksList } = useSelector((state) => state.tasks)
+    const { tasksList } = useSelector((state) => state.tasks);
 
     const addTask = (e) => {
         e.preventDefault();
-        console.log({ title, des });
+        // console.log({ title, des });
         dispatch(addTaskToList({ title, des }));
-        setTitle("")
-        setDes("")
+        setTitle("");
+        setDes("");
     };
 
     return (
-        <div className="bg-background mt-24 flex flex-col items-center justify-center">
-            <div>
-                <h1>{`Currently ${tasksList.length} task is pending`}</h1>
+        <div className="bg-background mt-24 flex w-full flex-col items-center justify-center">
+            <div className="m-3 w-3/4">
+                <h1 className="w-full rounded-md bg-slate-700 py-2 text-center text-3xl text-white">{`Currently ${tasksList.length} task is pending`}</h1>
             </div>
             <form className="mx-auto w-3/4 rounded-md bg-slate-400 p-6 shadow-lg">
                 <div className="space-y-4">

@@ -13,8 +13,8 @@ const UpdateTask = ({ setIsModalOpen }) => {
     const [modelID, setModelID] = useState(0);
 
     const updateTask = () => {
-        console.log("update model data");
-        console.log({ modelTitle, modelDescription });
+        // console.log("update model data");
+        // console.log({ modelTitle, modelDescription });
         dispatch(updateTaskInList({ id: modelID, title: modelTitle, des: modelDescription }))
         setIsModalOpen(false)
     };
