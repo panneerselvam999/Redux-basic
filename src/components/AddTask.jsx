@@ -25,6 +25,7 @@ const AddTask = () => {
     return (
         <div className="bg-background mt-24 flex w-full flex-col items-center justify-center">
             <div className="m-3 w-3/4">
+                <h2 className="text-5xl text-center bg-slate-900 text-white rounded-md inline-block mx-auto px-6 py-2 mb-5 uppercase">redux toolkit state management</h2>
                 <h1 className="w-full rounded-md bg-slate-700 py-2 text-center text-3xl text-white">{`Currently ${tasksList.length} task is pending`}</h1>
             </div>
             <form className="mx-auto w-3/4 rounded-md bg-slate-400 p-6 shadow-lg">
