@@ -13,9 +13,13 @@ const AddTask = () => {
     const addTask = (e) => {
         e.preventDefault();
         // console.log({ title, des });
-        dispatch(addTaskToList({ title, des }));
-        setTitle("");
-        setDes("");
+        if (title.trim() && des.trim()) {
+            dispatch(addTaskToList({ title, des }));
+            setTitle("");
+            setDes("");
+        } else {
+            alert("Please fill in both the title and description.");
+        }
     };
 
     return (

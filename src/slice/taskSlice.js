@@ -1,8 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 
 const initialState = {
-    tasksList: [],
+    tasksList: [
+        {
+            id: 1,
+            title: "Demo ",
+            des: "Data"
+        }
+    ],
     selectedTask: {},
 };
 
